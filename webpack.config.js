@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HandleBarsPlugin = require('handlebars-webpack-plugin');
 
@@ -63,6 +64,7 @@ const wPackConfig = {
     }]
   },
   plugins: [
+    new webpack.ProgressPlugin(),
     new HandleBarsPlugin({
       entry: path.join(process.cwd(), 'src', 'html', '**', '*.html'),
       output: path.join(process.cwd(), 'dist', '[path]', '[name].html'),
