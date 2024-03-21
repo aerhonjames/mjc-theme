@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HandleBarsPlugin = require('handlebars-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 // paths used in various placed in webpack config
 const paths = {
@@ -61,10 +62,19 @@ const wPackConfig = {
           loader: 'sass-loader'
         }
     ]
-    }]
+    }
+  ]
   },
   plugins: [
     new webpack.ProgressPlugin(),
+    new CopyPlugin({
+      patterns: [{
+              from: paths.src.fonts,
+              to: paths.dist.fonts,
+              noErrorOnMissing: true
+          }
+      ],
+  }),
     new HandleBarsPlugin({
       entry: path.join(process.cwd(), 'src', 'html', '**', '*.html'),
       output: path.join(process.cwd(), 'dist', '[path]', '[name].html'),
