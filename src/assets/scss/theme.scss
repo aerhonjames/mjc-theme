@@ -1,0 +1,44 @@
+/* Table of contents
+
+Note: Do not write any css in this file. Only use it to import other css files.
+Note: '~' in the import statement means the files is imported from the node_modeles folder. e.g Bootstrap funtions
+
+- Bootstrap Function
+- Bootstrap mixins
+- Theme SASS Variables - override Bootstrap's SASS Vars in this file.
+- Bootstrap Variables
+- Theme mixins
+- Bootstrap Core
+- Theme CSS Custom properties (CSS Variables)
+- Theme base
+- Theme Components
+- Theme Vendors
+- Custom CSS - Add your custom CSS to this file.
+*/
+
+/*Bootstrap Functions*/
+@import '~bootstrap/scss/functions';
+
+@import '~bootstrap/scss/mixins';
+
+@import 'abstracts/sass-variables';
+
+@import '~bootstrap/scss/variables';
+
+@import 'abstracts/mixins';
+
+@import 'utilities/utilities';
+
+@import '~bootstrap/scss/bootstrap';
+
+@import 'abstracts/css-vars';
+
+@import 'base/base';
+
+@import 'components/components';
+
+@import 'vendors/vendors';
+
+@import 'custom';
+
+
