@@ -36,7 +36,6 @@ const wPackConfig = {
     },
     port: 3000,
     open: true,
-    liveReload: false,
     watchFiles: ['src/**/*'],
   },
 	mode: 'development',
