@@ -1,7 +1,7 @@
 {
   "name": "MJC",
   "version": "1.0.0",
-  "description": "",
+  "description": "Practice project using webpack, handlebars html boilerplate and bootstrap css framework created by Aerhon Oliveros",
   "scripts": {
     "start": "webpack serve",
     "build": "webpack"
