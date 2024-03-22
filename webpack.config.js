@@ -69,10 +69,15 @@ const wPackConfig = {
     new webpack.ProgressPlugin(),
     new CopyPlugin({
       patterns: [{
-              from: paths.src.fonts,
-              to: paths.dist.fonts,
-              noErrorOnMissing: true
-          }
+          from: paths.src.fonts,
+          to: paths.dist.fonts,
+          noErrorOnMissing: true
+        },
+        {
+          from: paths.src.imgs,
+          to: paths.dist.imgs,
+          noErrorOnMissing: true
+        }
       ],
   }),
     new HandleBarsPlugin({
