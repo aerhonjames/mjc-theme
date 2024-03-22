@@ -1,0 +1,22 @@
+.navbar-nav .nav-link{
+    text-transform: uppercase;
+}
+
+.nav-link{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    letter-spacing: 1.4px;
+}
+
+@include media-breakpoint-up(lg){
+    .navbar-nav .nav-link{
+        margin-left: .25rem;
+        margin-right: .25rem;
+    }
+}
+
+@include media-breakpoint-up(xl){
+    .navbar-brand{
+        margin-right: 1.5rem;
+    }
+}

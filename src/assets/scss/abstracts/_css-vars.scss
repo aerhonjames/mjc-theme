@@ -1,0 +1,12 @@
+:root{
+    /*Theme font*/
+    --bs-font-sans-serif: 'Lato', sans-serif;
+
+    /* Theme icon */
+    --theme-font-icon: 'Font Awesome 6 Free';
+
+    /*Theme breakpoints*/
+    @each$breakpoint, $value in $grid-breakpoints{
+        --theme-breakpoint-#{$breakpoint}: #{$value};
+    }
+}
