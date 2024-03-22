@@ -1,0 +1,18 @@
+.btn {
+    text-transform: uppercase;
+}
+
+.btn-mjc-primary {
+    --bs-btn-font-weight: 700;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bs-yellow);
+    --bs-btn-border-color: var(--bs-yellow);
+    --bs-btn-border-radius: 0;
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #{shade-color($yellow, 10%)};
+    --bs-btn-hover-border-color: #{shade-color($yellow, 10%)};
+    --bs-btn-focus-shadow-rgb: var(--bs-yellow-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #{shade-color($yellow, 20%)};
+    --bs-btn-active-border-color: #{shade-color($yellow, 20%)};
+  }

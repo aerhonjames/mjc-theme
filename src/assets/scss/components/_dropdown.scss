@@ -36,6 +36,7 @@
     text-transform: none;
     margin-left: 2rem; 
     margin-right: 2rem;
+    color: $body-color !important;
 }
 
 @include media-breakpoint-up(lg){
@@ -44,6 +45,7 @@
         left: 0;
         right: 0;
         border: 0 !important;
+        border-radius: 0;
         padding-top: 2rem;
         padding-bottom: 2rem;
         box-shadow: 0 1.5rem 31px -17px rgb(22 28 45 / 8%);
